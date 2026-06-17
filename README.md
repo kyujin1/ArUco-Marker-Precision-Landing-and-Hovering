@@ -12,8 +12,8 @@
 
 ```bash
 cd ~/vtol_ws/src
-git clone https://github.com/PX4/px4_msgs.git
-git clone https://github.com/PX4/px4_ros_com.git
+git clone [https://github.com/PX4/px4_msgs.git](https://github.com/PX4/px4_msgs.git)
+git clone [https://github.com/PX4/px4_ros_com.git](https://github.com/PX4/px4_ros_com.git)
 
 2. 빌드
 워크스페이스 루트로 이동하여 빌드를 수행합니다.
@@ -23,6 +23,7 @@ cd ~/vtol_ws
 colcon build --packages-select px4_msgs px4_ros_com vtol
 source install/setup.bash
 
+
 ⚙️ 시스템 아키텍처
 cam_node: 카메라 이미지에서 ArUco 마커의 Pose 데이터를 추출하여 발행
 
@@ -30,11 +31,10 @@ precision_land/hover: PX4 Offboard 모드 제어 및 타겟 위치 기반 착륙
 
 🚀 실행 방법
 정밀 착륙 시나리오
-Bash
+
 cd ~/vtol_ws
 ros2 launch vtol precision_land.launch.py
-정밀 호버링 시나리오
-Bash
+
 cd ~/vtol_ws
 ros2 launch vtol precision_hover.launch.py
 ⚠️ 주의사항
